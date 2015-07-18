@@ -89,7 +89,7 @@ class RestfulPostController extends AbstractRestfulController
         $this->responseData($data);
     }
      
-    public function update($data)
+    public function update($id,$data)
     {
        if(isset($data)) {
             if(empty($data['title'])) {
@@ -109,7 +109,7 @@ class RestfulPostController extends AbstractRestfulController
 
             $id = $this->getPostTable()->save($model);
         }
-        
+
         $this->responseData($data);
     }
      
@@ -120,10 +120,10 @@ class RestfulPostController extends AbstractRestfulController
         $result_delete = $this->getPostTable()->delete($id);
         if(!$result_delete){
             $this->_errorCode = 1;
-            $this->_message = 'Delete Success';
-        }else{
-            $this->_errorCode = 1;
             $this->_message = 'Delete Failed';
+        }else{
+            $this->_errorCode = 0;
+            $this->_message = 'Delete Success';
         };
         
         $this->responseData($arrPost);

@@ -26,6 +26,7 @@ return array(
                         'controller'    => 'RestfulPost',
                     ),
                 ),
+                
             ),
 
             'RestfulTags' => array(

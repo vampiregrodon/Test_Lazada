@@ -62,7 +62,7 @@ class RestfulTagsController extends AbstractRestfulController
         $this->responseData($data);
     }
      
-    public function update($data)
+    public function update($id,$data)
     {
        if(isset($data)) {
             if(empty($data['title'])) {
@@ -94,7 +94,7 @@ class RestfulTagsController extends AbstractRestfulController
             $this->_errorCode = 1;
             $this->_message = 'Delete Failed';
         }else{
-            $this->_errorCode = 1;
+            $this->_errorCode = 0;
             $this->_message = 'Delete Success';
         };
         
