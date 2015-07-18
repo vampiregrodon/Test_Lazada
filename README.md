@@ -51,10 +51,12 @@ MODULE : Restful
 
 5. Select all posts by tag or tags :
 	POST http://localhost/zf2/public/post/get-list-by-tag
+
 	params : {'tag'=>'input Tag name',...}
 
 6. Count posts by tag or tags :
 	POST http://localhost/zf2/public/post/count-list-by-tag	
+	
 	params : {'tag'=>'input Tag name',....}
 
 
