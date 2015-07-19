@@ -1,7 +1,7 @@
 <h1>MODULE : Restful</h1>
 
 
-// Post *********************************************
+<h3>// Post *********************************************</h3>
 
 1. Get a Post :
 	GET http://localhost/zf2/public/json-restful-post
@@ -24,7 +24,7 @@
 
 
 
-// Tags **********************************************
+<h3>// Tags **********************************************</h3>
 
 1. Get a Tag :
 	GET http://localhost/zf2/public/json-restful-tags
