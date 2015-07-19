@@ -29,6 +29,7 @@ class RestfulPostController extends AbstractRestfulController
 
     public function countListByTagAction()
     {
+
         $arrParams = $this->params()->fromPost();
         $count = $this->getPostTable()->fetchAllCount($arrParams);
 
